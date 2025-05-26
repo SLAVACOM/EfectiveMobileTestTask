@@ -1,4 +1,4 @@
-package com.slavacom.efectivemobiletesttask.conroller;
+package com.slavacom.efectivemobiletesttask.controller;
 
 import com.slavacom.efectivemobiletesttask.dto.request.TransferRequest;
 import com.slavacom.efectivemobiletesttask.dto.response.CardResponse;
@@ -24,10 +24,9 @@ public class UserController {
     private final CardService cardService;
 
     @GetMapping("/balance")
-    public String getBalance() {
-        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+    public String getBalance(@AuthenticationPrincipal UserDetails user) {
 
-        return userService.getUserBalance(auth).toString();
+        return userService.getUserBalance(user).toString();
     }
 
     @GetMapping("/cards")

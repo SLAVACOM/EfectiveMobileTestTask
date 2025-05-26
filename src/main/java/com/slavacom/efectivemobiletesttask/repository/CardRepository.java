@@ -18,6 +18,8 @@ public interface CardRepository extends JpaRepository<Card, Long>, JpaSpecificat
         return findByNumberAndStatus(number, CardStatus.ACTIVE);
     }
 
+    
+
     List<Card> findAllByOwner(User user);
 
     void deleteByNumber(String number);

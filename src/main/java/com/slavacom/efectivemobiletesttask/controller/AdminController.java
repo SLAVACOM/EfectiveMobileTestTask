@@ -1,11 +1,8 @@
-package com.slavacom.efectivemobiletesttask.conroller;
+package com.slavacom.efectivemobiletesttask.controller;
 
 import com.slavacom.efectivemobiletesttask.dto.response.CardResponse;
 import com.slavacom.efectivemobiletesttask.dto.response.UserResponse;
-import com.slavacom.efectivemobiletesttask.model.Card;
-import com.slavacom.efectivemobiletesttask.model.User;
 import com.slavacom.efectivemobiletesttask.repository.CardRepository;
-import com.slavacom.efectivemobiletesttask.repository.UserRepository;
 import com.slavacom.efectivemobiletesttask.service.AdminService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
@@ -14,8 +11,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.List;
 
 @RestController
 @RequestMapping("/api/admin")

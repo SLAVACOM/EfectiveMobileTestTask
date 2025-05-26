@@ -1,4 +1,4 @@
-package com.slavacom.efectivemobiletesttask.conroller;
+package com.slavacom.efectivemobiletesttask.controller;
 
 import com.slavacom.efectivemobiletesttask.dto.request.AuthRequest;
 import com.slavacom.efectivemobiletesttask.dto.response.AuthResponse;
